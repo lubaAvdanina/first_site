@@ -8,15 +8,28 @@
 </head>
 
 <body>
-    <ul>
+   <div id="header"> 
+       <ul>
         <h1>Название сайта</h1>
     </ul>
     <ul class="topnav" id="myTopnav">
-        <li><a href="#main" class="active">Main</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="C:\Program Files\Git\first_site\Form.html">Form</a></li>
+        <li><a href="/" class="active">Menu</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/form">Form</a></li>
         <li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="showMenu()">&#9776</a></li>
     </ul>
+    </div>
+    <div class="content">
+        <table class="content__table">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Возраст</th>
+                </tr>             
+            </thead>
+            <tbody id="users"></tbody>
+        </table>
+   </div>
     <script src="Menu.js"></script>
 </body>
 

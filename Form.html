@@ -3,19 +3,28 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Всплывающее окно на css,javascript</title>
-    <style>
-
-
-    </style>
+    <title>Form</title>
+    <link rel="stylesheet" href="Menu.css">
 </head>
 
 <body>
+    <div id="header">
+        <ul>
+            <h1>Название сайта</h1>
+        </ul>
+        <ul class="topnav" id="myTopnav">
+            <li><a href="/">Menu</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/form" class="active">Form</a></li>
+            <li class="icon"><a href="javascript:void(0);" style="font-size: 15px;" onclick="showMenu()">&#9776</a></li>
+        </ul>
+    </div>
+    <script src="Menu.js"></script>
     <h2>Регистрация</h2>
-    <form action="Menu.html" name="f1" onclick="Console()">
+    <form action="/Form" method="post" name="f1">
         <input type="text" placeholder="Имя" name="name" class="input">
         <input type="number" placeholder="Возраст" name="age" class="input">
-        <input type="submit" value="Отправить" name="sab" >
+        <input type="submit" value="Отправить" name="sab">
     </form>
     <script src="Menu.js"></script>
 </body>

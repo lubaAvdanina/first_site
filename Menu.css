@@ -67,3 +67,14 @@ ul.topnav li.icon {
         text-align: left;
     }
 }
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 70px 0 0 0;
+}
+
+.content__table{
+    width: 50vw;
+}
