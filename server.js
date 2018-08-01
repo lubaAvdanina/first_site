@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', router);
 
 app.post('/Form', (req, res) =>{
-  var user = new User({
+  const user = new User({
       name: req.body.name,
        age: req.body.age
   });
